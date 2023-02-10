@@ -1,0 +1,25 @@
+{
+  "name": "ts-shorthand-issue",
+  "version": "1.0.0",
+  "description": "Example for shorthand execution order issue",
+  "main": "index.js",
+  "scripts": {
+    "check": "tsc --noEmit --pretty",
+    "lint": "eslint src/*.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgohlke/ts-shorthand-issue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgohlke/ts-shorthand-issue/issues"
+  },
+  "homepage": "https://github.com/sgohlke/ts-shorthand-issue#readme",
+  "devDependencies": {
+    "@sgohlke/ts-base-dependencies": "1.0.1"
+  }
+}

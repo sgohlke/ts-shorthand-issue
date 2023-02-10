@@ -1,0 +1,21 @@
+name: Install and test issue
+on: [push]
+
+jobs:
+  shorthandissue:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: 18.x
+      - name: Install dependencies
+        run: npm install
+      - name: Check for linting issues
+        run: npm run lint
+      - name: Check types
+        run: npm run check
+      - name: Run tests
+        run: npm test
