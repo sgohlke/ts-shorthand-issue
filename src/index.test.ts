@@ -1,6 +1,7 @@
 import {
     Elements,
-    getElementOrDefaultWithBrackets, getElementOrDefaultWithoutBrackets
+    getElementOrDefaultWithBrackets,
+    getElementOrDefaultWithoutBrackets
 } from './index'
 
 test('Should get correct Element when calling getElementOrDefaultWithBrackets', () => {
